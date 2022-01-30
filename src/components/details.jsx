@@ -11,9 +11,9 @@ const Details = () => {
       .then((res) => res.json())
       .then((data) => setProductDetails(data));
   }, []);
-  const { title, description, image, price} = productDetails;
+  const { title, description, image, price } = productDetails;
   const handleClick = () => {
-    navigate("/home");
+    navigate("/");
   };
   return (
     <div className="mx-auto font-sans m-4 p-4 border rounded-lg w-96">

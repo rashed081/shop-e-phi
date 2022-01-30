@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { axios } from "axios";
 
 const Details = () => {
   let navigate = useNavigate();
@@ -12,9 +11,9 @@ const Details = () => {
       .then((res) => res.json())
       .then((data) => setProductDetails(data));
   }, []);
-  const { title, description, image, price, category } = productDetails;
+  const { title, description, image, price} = productDetails;
   const handleClick = () => {
-    navigate("/");
+    navigate("/home");
   };
   return (
     <div className="mx-auto font-sans m-4 p-4 border rounded-lg w-96">

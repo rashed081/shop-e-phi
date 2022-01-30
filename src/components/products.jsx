@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div>
       <h1 className="text-3xl font-semibold text-slate-900 bg-gray-200 p-4 ">
-        Shop-e-phi
+        Shop-E-Phi
       </h1>
       <div className="grid   md:grid-cols-2 sm:grid-cols-1">
         {product.map((pd) => (

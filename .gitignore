@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# SQL Server files
+*.mdf
+*.ldf
+#Ignore all xlsx files
+.xlsx
